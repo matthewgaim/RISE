@@ -3,11 +3,10 @@
 }
 
 .pic{
-  height:300px;
-  width:300px;
+  height:300px !important;
+  width:300px !important;
 }
 
-.supports{
-  font-size:20px;
-  float:right;
+.profile_pic{
+  height:50px;
 }

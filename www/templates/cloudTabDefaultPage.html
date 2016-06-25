@@ -1,3 +1,29 @@
 <ion-view title="RISE" id="page4" class=" ">
-    <ion-content padding="true" class="has-header"></ion-content>
+  <ion-nav-buttons side="right">
+      <a class="button button-icon icon ion-android-more-vertical" ng-click="popover.show($event)"></a>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header" ng-controller="cloudTabDefaultPageCtrl">
+      <center>
+        <img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" class="img-circle" style="width:200px;height:200px;border-radius:50%" alt="" />
+        <label class="item item-input">
+          <input placeholder="Email" type="text" ng-model="email" id="email">
+        </label>
+        <label class="item item-input">
+          <input placeholder="Password" type="text" ng-model="password" id="password">
+        </label>
+        <button type="button" name="button" ng-click="createUser()">Create User</button>
+        <button type="button" name="button" ng-click="signIn()">Sign In</button>
+      </center>
+      <script id="templates/popover.html" type="text/ng-template">
+        <ion-popover-view>
+          <ion-content>
+            <div class="list">
+              <a class="item">
+                Sign Out
+              </a>
+            </div>
+          </ion-content>
+        </ion-popover-view>
+      </script>
+    </ion-content>
 </ion-view>
